@@ -84,7 +84,7 @@
 ### Feature Importances
 
 ![](image/image6.png)
-![](image/iamge7.png)
+![](image/image7.png)
 
 ### Conclusion
 
