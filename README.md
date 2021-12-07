@@ -18,7 +18,7 @@
     * [References](#references)
 
 # Introduction
-단지 내의 적절한 수차 수요를 예측하여 필요한 주차대수를 알아내기 위한 프로젝트. <br>
+단지 내의 적절한 차 수요를 예측하여 필요한 주차대수를 알아내기 위한 프로젝트. <br>
 데이콘의 주차수요 예측 AI 경진대회의 메인 데이터로 사용하였고 결측치 처리를 하기 위해서 공공데이터포털에서 주택관리공단의 임대상가 데이터를 사용하였다. 
 
 데이콘 : https://dacon.io/competitions/official/235745/overview/description <br>
