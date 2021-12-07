@@ -5,13 +5,17 @@
 - [Introduction](#introduction)
 - [Overview of the Data](#overview-of-the-data)
 - [Preprocessing](#preprocessing)
+    * [지하철](#지하철)
+    * [임대보증금과 임대료](#임대보증금과-임대료)
+    * [Scaling](#Scaling)
 - [Machine Learning Modeling](#machine-learning-modeling)
     * [Testing algorithm](#testing-algorithm)
-    * [Feature Importances](#feature-importances)
     * [Learning Curve](#learning-curve)
-    * [Confusion Matrix](#confusion-matrix)
-    * [Conclusion](#conclusion)
+    * [Feature Importances](#feature-importances)
+    * [Feature Coefficient](#feature-coefficient)
+- [Conclusion](#conclusion)
 - [Retrospect](#retrospect)
+    * [References](#references)
 
 # Introduction
 단지 내의 적절한 수차 수요를 예측하여 필요한 주차대수를 알아내기 위한 프로젝트. <br>
@@ -92,7 +96,7 @@
 
 ![](image/image7.png)
 
-### Conclusion
+# Conclusion
 
 - 결측치 처리로 많은 고민을 했다. 외부 데이터를 사용하는 것이 가장 합리적이라 판단을 하였고 평균 혹은 중간값이 아닌 회귀분석으로 결측치를 채웠다. 
 - 이상치 영향을 최소화 하기 위해서 robust scaler로 scaling하였고 규제모델을 사용했으나 규제모델보다는 Random Forest가 높은 성능으로 가장 노멀한 모델로 나왔다.
