@@ -1,4 +1,4 @@
-# Spotify Song Hit or Flop Prediction
+# Parking Demand Prediction
  
 
 ## 목차
@@ -72,8 +72,7 @@
     |RandomForestRegression | 0.994687 | 0.999055 | -985.794994 | -175.049400 | -12.908472 | -5.021244 | 
     |Ridge| 0.799209 | 0.802941 | -37042.736967 | -36492.920358 | -136.241044 | -135.130113 |
     |Lasso| 0.798995 | 0.802735 | -37083.011116 | -36531.095999 | -136.623068 | -135.511459 |
-    |LinearRegression| 0.799205 | 0.802942 | -37043.467422 | 
-    -36492.871721 | -136.235105 | -135.122447 |
+    |LinearRegression| 0.799205 | 0.802942 | -37043.467422 | -36492.871721 | -136.235105 | -135.122447 |
 
 ### Learning curve
 
@@ -83,16 +82,21 @@
 
 ### Feature Importances
 
+- 트리기반의 모델인 Random forest와 Decision tree의 Feature Importnaces. 두 모델 모두 단지내주차면수가 가장 큰 상관관계가 있는 컬럼으로 나타났다. 
+ 
 ![](image/image6.png)
+
+### Feature Coefficient
+
+- Ridge, Lasso, Linear Regression의 Feature Coefficient. 
+
 ![](image/image7.png)
 
 ### Conclusion
 
-TBU
-
-# Retrospect 
-
-TBU
+- 결측치 처리로 많은 고민을 했다. 외부 데이터를 사용하는 것이 가장 합리적이라 판단을 하였고 평균 혹은 중간값이 아닌 회귀분석으로 결측치를 채웠다. 
+- 이상치 영향을 최소화 하기 위해서 robust scaler로 scaling하였고 규제모델을 사용했으나 규제모델보다는 Random Forest가 높은 성능으로 가장 노멀한 모델로 나왔다.
+- Random Forest와 Decision tree 모델에서 단지내주차면수가 압도적으로 가장 큰 상관관계가 있는 컬럼이었다.  
 
 #### References
 - *상가임대와 주택임대의 장단점 및 주의사항 - 스카이데일리* https://www.skyedaily.com/news/news_view.html?ID=7083)
