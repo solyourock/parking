@@ -98,6 +98,11 @@
 - 이상치 영향을 최소화 하기 위해서 robust scaler로 scaling하였고 규제모델을 사용했으나 규제모델보다는 Random Forest가 높은 성능으로 가장 노멀한 모델로 나왔다.
 - Random Forest와 Decision tree 모델에서 단지내주차면수가 압도적으로 가장 큰 상관관계가 있는 컬럼이었다.  
 
+
+# Retrospect
+
+- 결측치 처리로 많은 고민을 하였고 지하철은 지역별 평균, 임대보증금과 임대료는 회귀 분석으로 결측치 처리를 한것이 가장 베스트라고 생각했지만 다른 방법이 있는지 조금 더 찾아보고 해보고 싶다. 
+
 #### References
 - *상가임대와 주택임대의 장단점 및 주의사항 - 스카이데일리* https://www.skyedaily.com/news/news_view.html?ID=7083)
 - *매장용 임대 빌딩의 임대료 걸정요인 분석  (최진, 진창하 2015)* http://www.reacademy.org/rboard/data/krea2_new/62_4.pdf
